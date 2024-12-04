@@ -10,8 +10,16 @@
 
 int _printf(const char *format, ...)
 {
-	while (*format) 
+	va_list args;
+
+	va_start(args, format);
+
+	while (*format)
 	{
+		if (*format)
+		{
+
+		}
 		write(1, format, 1);
 		format++;
 	}
