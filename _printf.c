@@ -16,7 +16,8 @@ int _printf(const char *format, ...)
 	va_list args;
 
 	va_start (args, format);
-	while (*format) 
+	
+	while (*format)
 	{
 		if (*format == '%' && (*(format + 1) == 'c' || *(format + 1) == 's'))
 		{

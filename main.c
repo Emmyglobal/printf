@@ -6,7 +6,7 @@
  * Return: Integer
  */
 
-int main()
+int main(void)
 {
 	char d = 'E';
 	int f = 3424;
