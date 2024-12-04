@@ -19,7 +19,7 @@ int _printf(const char *format, ...)
 
 	while (*format)
 	{
-		if (*format == '%' && (*(format + 1) == 'c' || *(format + 1) == 's'))
+		if (*format == '%' && (*(format + 1) == 'c' || *format + 1 == 's'))
 		{
 			format++;
 			if (*format == 'c')
